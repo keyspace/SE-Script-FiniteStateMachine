@@ -51,6 +51,9 @@ namespace IngameScript
             Echo($"InstructionCount: {Runtime.CurrentInstructionCount} / {Runtime.MaxInstructionCount}");
         }
 
+        /// <summary>
+        /// Demo: sets up a simple light chase sequence.
+        /// </summary>
         private void Setup()
         {
             _light1 = GridTerminalSystem.GetBlockWithName("Interior Light") as IMyInteriorLight;
